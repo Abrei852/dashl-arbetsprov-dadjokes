@@ -1,0 +1,30 @@
+/* Styling Container*/
+.container {
+	width: 300px;
+	margin: 10px auto 0 auto;
+	color: silver;
+	border: 2px solid #38425b;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+/* Styling Ul*/
+ul {
+	padding-inline-start: 0;
+}
+
+/* Styling Li*/
+li {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 1em 0 1em 15px;
+	font-weight: 400;
+}
+
+li:hover {
+	cursor: pointer;
+	background-color: #343d54;
+	color: #175aca;
+	border-radius: 6px;
+}
