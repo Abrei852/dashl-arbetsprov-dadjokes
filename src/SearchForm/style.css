@@ -1,0 +1,40 @@
+/* Styling Form */
+form {
+	width: 300px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px;
+	background-color: #1b1d25;
+	border: 2px solid #38425b;
+	border-radius: 10px;
+}
+form:focus-within {
+	border: 2px solid #175aca;
+}
+form:focus-within #icon {
+	color: #175aca;
+}
+
+/* Styling Input */
+input {
+	border: none;
+	padding: 1em 0 1em 15px;
+	width: 100%;
+	background-color: transparent;
+	color: silver;
+	font-size: 16px;
+}
+input:focus-visible {
+	outline: none;
+}
+
+/* Styling Icon */
+.icon-container {
+	padding: 2px 5px;
+}
+#icon {
+	width: 20px;
+	color: #525457;
+}
