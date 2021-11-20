@@ -1,5 +1,5 @@
 async function FetchJokes(setJokes, search) {
-	if (search.length > 0) {
+	if (search.trim().length > 0) {
 		await fetch(
 			`https://icanhazdadjoke.com/search?term=${search}`,
 			{

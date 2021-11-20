@@ -17,19 +17,14 @@ function App() {
 
 	const onSearchChange = (text) => {
 		if (text.trim() === "") {
-			setSearch([]);
 			setJokes([]);
-		} else {
-			setSearch(text);
 		}
+		setSearch(text);
 	};
 
 	return (
 		<div className="App">
-			<SearchForm
-				search={search}
-				onSearchChange={onSearchChange}
-			/>
+			<SearchForm onSearchChange={onSearchChange} />
 			<SuggestionBox jokes={jokes} />
 		</div>
 	);

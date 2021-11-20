@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 
 function SuggestionBox({ jokes }) {
-	if (jokes.length < 1) {
+	if (jokes.length === 0) {
 		return (jokes = null);
 	}
 	return (
