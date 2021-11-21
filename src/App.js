@@ -10,11 +10,23 @@ function App() {
 
 	useEffect(() => {
 		const timer = setTimeout(() => {
-			FetchJokes(setJokes, search);
+			getAllJokes(search);
 		}, 500);
 		return () => clearTimeout(timer);
 	}, [search]);
 
+	//makes an API call and sets the jokes state
+	const getAllJokes = async (search) => {
+		if (search.trim().length > 0) {
+			const data = await FetchJokes(search);
+			if (data) {
+				setJokes(data.results);
+			}
+		}
+	};
+
+	//sets the search state to the parameter text
+	//if the input is empty it resets the jokes state
 	const onSearchChange = (text) => {
 		if (text.trim() === "") {
 			setJokes([]);
